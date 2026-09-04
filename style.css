@@ -161,3 +161,57 @@ nav h1 {
   background: #ffc548;
   color: #72458f;
 }
+/* Portfolio styles */
+.content h1 {
+  color: #5f8b5c;
+}
+
+#portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#portfolio li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#portfolio a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #5f8b5c;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #dc87bcfa;
+  border: 3px solid #5f8b5c;
+  border-radius: 12px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+#portfolio a:hover {
+  background: #ffc548;
+  color: #72458f;
+  transform: translateX(4px);
+   border: 3px solid #72458f;
+  border-radius: 12px;
+}
+
+#portfolio a::after {
+  content: "->";
+  font-size: 0.96rem;
+  opacity: 0.4;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+#portfolio a:hover::after {
+  opacity: 1;
+}
